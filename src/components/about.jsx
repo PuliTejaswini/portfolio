@@ -43,55 +43,53 @@ const About = () => {
           </div>
 
       <h2>About Me</h2>
-      <div className={style.about_content + ' ' + style.about_contentCard}>
-        <p className={style.about_para}>
-          I'm Puli Tejaswini, a Computer Science student specializing in Data Science with a strong interest in full-stack development. I’ve built real-world projects using React, Node.js, and MongoDB, and gained experience through internships in Java and web development. I'm a quick learner, team player, and passionate about building smart, scalable web applications.
-        </p>
-        <div className={style['ai-card-wrapper']}>
-          <div
-            className={style['container-wrap']}
-            ref={cardRef}
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
-          >
-            <input type="checkbox" id="ai-card-toggle" />
-            <div className={style.card}>
-              <div className={style['background-blur-balls']}>
-                <div className={style.balls}>
-                  <div className={style.ball + ' ' + style.violet}></div>
-                  <div className={style.ball + ' ' + style.green}></div>
-                  <div className={style.ball + ' ' + style.rosa}></div>
-                  <div className={style.ball + ' ' + style.cyan}></div>
-                </div>
+      <div className={style['ai-card-wrapper']}>
+        <div
+          className={style['container-wrap']}
+          ref={cardRef}
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+        >
+          <input type="checkbox" id="ai-card-toggle" />
+          <div className={style.card}>
+            <div className={style['background-blur-balls']}>
+              <div className={style.balls}>
+                <div className={style.ball + ' ' + style.violet}></div>
+                <div className={style.ball + ' ' + style.green}></div>
+                <div className={style.ball + ' ' + style.rosa}></div>
+                <div className={style.ball + ' ' + style.cyan}></div>
               </div>
-              <div className={style['content-card']}>
-                <div className={style['background-blur-card']}></div>
-                <div className={style.eyes} ref={eyesRef}>
-                  <div className={style.eye}></div>
-                  <div className={style.eye}></div>
-                </div>
-                <div className={style['eyes'] + ' ' + style.happy}>
-                  <svg viewBox="0 0 60 20"><path d="M10,10 Q20,20 30,10 Q40,0 50,10" stroke="#9147ff" strokeWidth="4" fill="none"/></svg>
-                </div>
+            </div>
+            <div className={style['content-card']}>
+              <div className={style['background-blur-card']}></div>
+              <div className={style.eyes} ref={eyesRef}>
+                <div className={style.eye}></div>
+                <div className={style.eye}></div>
               </div>
-              <div className={style['container-ai-chat']}>
-                <div className={style.chat}>
-                  <div className={style['chat-bot']}>
-                    <textarea placeholder="Ask me anything..." disabled></textarea>
+              <div className={style['eyes'] + ' ' + style.happy}>
+                <svg viewBox="0 0 60 20"><path d="M10,10 Q20,20 30,10 Q40,0 50,10" stroke="#9147ff" strokeWidth="4" fill="none"/></svg>
+              </div>
+            </div>
+            <div className={style['container-ai-chat']}>
+              <div className={style.chat}>
+                <div className={style['chat-bot']}>
+                  <textarea placeholder="Ask me anything..." disabled></textarea>
+                </div>
+                <div className={style.options}>
+                  <div className={style['btns-add']}>
+                    <button><i>+</i></button>
+                    <button><i>-</i></button>
                   </div>
-                  <div className={style.options}>
-                    <div className={style['btns-add']}>
-                      <button><i>+</i></button>
-                      <button><i>-</i></button>
-                    </div>
-                    <button className={style['btn-submit']}><i>→</i></button>
-                  </div>
+                  <button className={style['btn-submit']}><i>→</i></button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <p className={style.about_para}>
+        I'm Puli Tejaswini, a Computer Science student specializing in Data Science with a strong interest in full-stack development. I’ve built real-world projects using React, Node.js, and MongoDB, and gained experience through internships in Java and web development. I'm a quick learner, team player, and passionate about building smart, scalable web applications.
+      </p>
     </section>
   );
 };

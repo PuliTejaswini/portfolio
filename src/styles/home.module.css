@@ -1,0 +1,61 @@
+/* Modern Home section styles */
+.home_section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  color: #fff;
+  padding: 0 2rem;
+}
+.intro {
+  text-align: center;
+}
+.intro h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+.intro h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+  color: #00bcd4;
+}
+.intro p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact_icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 1.2rem;
+}
+.social_links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.social_links a {
+  color: #fff;
+  font-size: 2rem;
+  transition: color 0.2s;
+}
+.social_links a:hover {
+  color: #00bcd4;
+}
+@media (max-width: 700px) {
+  .intro h1 {
+    font-size: 2rem;
+  }
+  .intro h2 {
+    font-size: 1.1rem;
+  }
+}
