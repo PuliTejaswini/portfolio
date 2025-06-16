@@ -1,0 +1,43 @@
+/* Education section styles */
+.education_section {
+  padding: 5rem 2rem 2rem 2rem;
+  background: #232526;
+  color: #fff;
+}
+.education_section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #00bcd4;
+  text-align: center;
+}
+.education_list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.education_item {
+  background: #181818;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.education_item h3 {
+  margin: 0 0 0.3rem 0;
+  color: #fff;
+}
+.degree {
+  font-size: 1.1rem;
+  color: #00bcd4;
+  margin-right: 1rem;
+}
+.timeline {
+  font-size: 0.95rem;
+  color: #bbb;
+}
+@media (max-width: 700px) {
+  .education_item {
+    padding: 1rem 1rem;
+  }
+}
