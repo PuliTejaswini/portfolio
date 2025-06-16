@@ -1,6 +1,6 @@
 /* Skills section styles */
 .skills_section {
-  padding: 5rem 2rem 2rem 2rem;
+  padding: 2rem 0;
   background: #181818;
   color: #fff;
 }
@@ -13,29 +13,33 @@
 .skills_grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.5rem;
   justify-content: center;
+  align-items: flex-start;
 }
 .skill {
+  min-width: 120px;
+  max-width: 180px;
+  flex: 1 1 120px;
+  background: linear-gradient(135deg, #232526 60%, #00bcd4 100%);
+  color: #fff;
+  border-radius: 1.2rem;
+  padding: 1.2rem 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  width: 13rem;
-  height: 3rem;
-  background-size: 300% 300%;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  font-size: 1.1rem;
+  text-align: center;
   cursor: pointer;
-  backdrop-filter: blur(1rem);
-  border-radius: 5rem;
-  transition: 0.5s;
-  animation: gradient_301 5s ease infinite;
-  border: double 4px transparent;
-  background-image: linear-gradient(#212121, #212121),
-    linear-gradient(137.48deg, #ffdb3b 10%, #fe53bb 45%, #8f51ea 67%, #0044ff 87%);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
   position: relative;
-  overflow: hidden;
-  margin: 0.5rem auto;
+}
+.skill:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 6px 24px rgba(0, 188, 212, 0.18);
 }
 .skill strong {
   z-index: 2;
@@ -76,9 +80,6 @@
 .skill:hover #container-stars {
   z-index: 1;
   background-color: #212121;
-}
-.skill:hover {
-  transform: scale(1.1);
 }
 .skill:active {
   border: double 4px #fe53bb;
@@ -136,15 +137,28 @@
   70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(0, 0, 0, 0); }
   100% { transform: scale(0.75); box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); }
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .skills_grid {
     gap: 1rem;
   }
   .skill {
-    width: 95vw;
-    min-width: 180px;
-    max-width: 98vw;
-    padding: 1rem 1.2rem;
+    min-width: 100px;
+    max-width: 140px;
     font-size: 1rem;
+    padding: 1rem 0.7rem;
+  }
+}
+@media (max-width: 700px) {
+  .skills_grid {
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    justify-content: center;
+  }
+  .skill {
+    min-width: 90px;
+    max-width: 110px;
+    font-size: 0.92rem;
+    padding: 0.7rem 0.5rem;
+    border-radius: 0.8rem;
   }
 }
