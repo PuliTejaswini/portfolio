@@ -7,14 +7,14 @@
 }
 .about_section h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: -1rem;
   color: #00bcd4;
 }
 .about_section p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   max-width: 700px;
   text-align: left;
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 .intro {
@@ -53,7 +53,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   margin-top: 0;
   position: static;
   max-width: 100%;
@@ -158,7 +158,7 @@
 
 .card {
   width: 100%;
-  height: 100%;
+  height: 90%;
   /* background-color: #fff; */
   transform-style: preserve-3d;
   will-change: transform;
@@ -794,7 +794,7 @@
   }
   .ai-card-wrapper {
     width: auto;
-    margin-bottom: 0;
+    margin-bottom: 56px;
     margin-left: 2rem;
     order: 1;
     align-items: flex-start;

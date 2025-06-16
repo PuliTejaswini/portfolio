@@ -6,12 +6,12 @@ const Contact = () => (
   <section id="contact" className={style.contact_section}>
     <h2>Contact</h2>
     <div className={style.contact_list}>
-      <div className={style.contact_item}><FaEnvelope /> pulitejaswini29@gmail.com</div>
-      <div className={style.contact_item}><FaPhone /> +91-8919284065</div>
-      <div className={style.contact_item}>
+      <div className={style.contact_item} style={{ '--i': '0.1s' }}><FaEnvelope /> pulitejaswini29@gmail.com</div>
+      <div className={style.contact_item} style={{ '--i': '0.2s' }}><FaPhone /> +91-8919284065</div>
+      <div className={style.contact_item} style={{ '--i': '0.3s' }}>
         <a href="https://linkedin.com/in/puli-tejaswini-a2710925a" target="_blank" rel="noopener noreferrer"><FaLinkedin /> LinkedIn</a>
       </div>
-      <div className={style.contact_item}>
+      <div className={style.contact_item} style={{ '--i': '0.4s' }}>
         <a href="https://github.com/PuliTejaswini" target="_blank" rel="noopener noreferrer"><FaGithub /> GitHub</a>
       </div>
     </div>

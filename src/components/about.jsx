@@ -44,6 +44,7 @@ const About = () => {
 
       <h2>About Me</h2>
       <div className={style['ai-card-wrapper']}>
+        
         <div
           className={style['container-wrap']}
           ref={cardRef}
@@ -87,6 +88,7 @@ const About = () => {
           </div>
         </div>
       </div>
+     
       <p className={style.about_para}>
         I'm Puli Tejaswini, a Computer Science student specializing in Data Science with a strong interest in full-stack development. I’ve built real-world projects using React, Node.js, and MongoDB, and gained experience through internships in Java and web development. I'm a quick learner, team player, and passionate about building smart, scalable web applications.
       </p>

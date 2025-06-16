@@ -22,6 +22,17 @@
   border-radius: 10px;
   padding: 1.5rem 2rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(40px) scale(0.98);
+  animation: fadeInCert 0.7s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+@keyframes fadeInCert {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 .experience_item h3 {
   margin: 0 0 0.3rem 0;
@@ -40,6 +51,39 @@
   margin-top: 0.7rem;
   font-size: 1rem;
   line-height: 1.6;
+}
+.experience_item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.experience_item li {
+  background: linear-gradient(90deg, #00bcd4 0%, #232526 100%);
+  color: #fff;
+  border-radius: 6px;
+  margin-bottom: 0.7rem;
+  padding: 0.7em 1.1em;
+  font-size: 1.05rem;
+  position: relative;
+  left: -10px;
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: certListFadeIn 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation-delay: calc(var(--i, 0) * 0.08s + 0.3s);
+  transition: transform 0.25s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.25s;
+  cursor: pointer;
+}
+@keyframes certListFadeIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.experience_item li:hover {
+  transform: translateX(0) scale(1.08);
+  font-size: 1.18rem;
+  box-shadow: 0 4px 18px rgba(0,188,212,0.10);
+  z-index: 2;
 }
 @media (max-width: 700px) {
   .experience_item {
