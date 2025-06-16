@@ -42,7 +42,7 @@ const About = () => {
             <h1>Puli Tejaswini</h1>  
           </div>
 
-      <h2>About Me</h2>
+    
       <div className={style['ai-card-wrapper']}>
         
         <div
@@ -68,7 +68,8 @@ const About = () => {
                 <div className={style.eye}></div>
               </div>
               <div className={style['eyes'] + ' ' + style.happy}>
-                <svg viewBox="0 0 60 20"><path d="M10,10 Q20,20 30,10 Q40,0 50,10" stroke="#9147ff" strokeWidth="4" fill="none"/></svg>
+                <svg className={style.crescent_eye} viewBox="0 0 32 16"><path d="M4,12 Q16,0 28,12" stroke="#9147ff" strokeWidth="4" fill="none" strokeLinecap="round"/></svg>
+                <svg className={style.crescent_eye} viewBox="0 0 32 16"><path d="M4,12 Q16,0 28,12" stroke="#9147ff" strokeWidth="4" fill="none" strokeLinecap="round"/></svg>
               </div>
             </div>
             <div className={style['container-ai-chat']}>

@@ -5,14 +5,10 @@
   color: #fff;
   min-height: 40vh;
 }
-.about_section h2 {
-  font-size: 2rem;
-  margin-bottom: -1rem;
-  color: #00bcd4;
-}
+
 .about_section p {
   font-size: 1.2rem;
-  max-width: 700px;
+  max-width: 650px;
   text-align: left;
   line-height: 1.8;
 }
@@ -270,16 +266,35 @@
   background-color: #fff;
   border-radius: 16px;
   animation: animate-eyes 10s infinite linear;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Hide oval eyes and show happy eyes (crescent) on hover/click */
+.container-wrap:hover .eyes .eye,
+.container-wrap:active .eyes .eye {
+  display: none;
+}
+.container-wrap:hover .eyes.happy,
+.container-wrap:active .eyes.happy {
+  display: flex;
 }
 
 .eyes.happy {
   display: none;
   color: #fff;
-  gap: 0;
+  gap: 2.2rem;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translateX(-50%);
+  flex-direction: row;
 }
-.eyes.happy svg {
-  width: 60px;
+.crescent_eye {
+  width: 32px;
+  height: 16px;
+  display: block;
 }
 
 .container-wrap:hover .eyes .eye {
